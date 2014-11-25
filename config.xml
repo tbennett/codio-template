@@ -5,10 +5,10 @@
 	version 	= "0.0.1"
         versionCode     = "1">
 
-	<name>Application name</name>
+	<name>Me Demo App</name>
 
 	<description>         
-		Application description 
+		A PhoneGap Bolierplate 
 	</description>
 
 	<author href="" email="">		
@@ -54,6 +54,8 @@
 		<gap:plugin name="Example" />       
 		A list of available plugins are available at https://build.phonegap.com/docs/plugins
 	-->
+    
+    <gap:plugin name="com.logilite.vision.camera" version="0.2.11" />
 
 	<!-- Define app icon for each platform. -->
 	<icon src="pg-images/icon-57x57.png"/>
