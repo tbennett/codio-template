@@ -4,12 +4,11 @@
 
 #photo {
     width:100%;
-    padding:.25em;
+    padding:1em;
 }
 
 #myImage {
     position:relative;
-    margin:auto;
     width:100%;
     height:auto;
 }
