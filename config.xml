@@ -8,7 +8,7 @@
 	<name>Me Demo App</name>
 
 	<description>         
-		A PhoneGap Bolierplate 
+		A PhoneGap Boilerplate 
 	</description>
 
 	<author href="" email="">		
@@ -26,6 +26,7 @@
 	        permission on your app, which PhoneGap requires.
 	-->
 	<preference name="permissions" value="none"/>
+    <preference name="CameraUsesGeolocation" value="false" />
 
 	<!-- Customize your app and platform with the preference element. -->
 	<!-- <preference name="phonegap-version"      value="3.4.0" /> -->      <!-- all: current version of PhoneGap -->
@@ -54,8 +55,8 @@
 		<gap:plugin name="Example" />       
 		A list of available plugins are available at https://build.phonegap.com/docs/plugins
 	-->
-    
-    <gap:plugin name="com.logilite.vision.camera" version="0.2.11" />
+    <gap:plugin name="org.apache.cordova.camera" version="0.3.2" />
+    <gap:plugin name="org.apache.cordova.geolocation" version="0.3.10" />
 
 	<!-- Define app icon for each platform. -->
 	<icon src="pg-images/icon-57x57.png"/>
