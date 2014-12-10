@@ -9,6 +9,9 @@ navigator.camera.getPicture(onSuccess, onFail, { quality: 50,
     destinationType: Camera.DestinationType.FILE_URI });
 }
 
+document.getElementById('photo').addEventListener('click', function(e) {
+   getPic(); 
+});
 
 
 function onDeviceReady() {
