@@ -3,13 +3,12 @@
 document.addEventListener('deviceready', onDeviceReady, false);
 
 
-
 function getPic() {
     
     var cameraOptions = { 
         quality: 50,
         destinationType: Camera.DestinationType.FILE_URI,  
-        saveToPhotoAlbum: true
+        saveToPhotoAlbum: false
     };
     
     navigator.camera.getPicture(onSuccess, onFail, cameraOptions);
@@ -22,6 +21,14 @@ function onDeviceReady() {
     
     document.getElementById('photo').addEventListener('click', function(e) {
         getPic(); 
+    });
+    
+    document.getElementById('myImage').addEventListener('click', function(e) {
+        CordovaExif.readData(e.target.src, function(exifObject) {
+            var lat = exifObject['GPS Latitude'];
+            var lng = exifObject['GPS Latitude'];
+            console.log(lat + ', ' + lng);
+        });
     });
 }
 

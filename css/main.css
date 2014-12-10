@@ -4,13 +4,16 @@
 
 #photo {
     display:block;
-    width:200px;
+    width:80%;
+    position:relative;
+    margin:auto;
     padding:1em;
     font:1.5em/1.5 sans-serif;
     text-align:center;
     text-decoration:none;
     background-color:#0a8416;
     color:#fff;
+    border-radius:5px;
 }
 
 #myImage {
