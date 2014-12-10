@@ -2,16 +2,14 @@
 
 document.addEventListener('deviceready', onDeviceReady, false);
 
-navigator.geolocation.getCurrentPosition(onSuccessGeo, onError);
+
 
 function getPic() {
 navigator.camera.getPicture(onSuccess, onFail, { quality: 50,
     destinationType: Camera.DestinationType.FILE_URI });
 }
 
-document.getElementById('photo').addEventListener('click', function(e) {
-   getPic(); 
-});
+
 
 
 function onDeviceReady() {
@@ -21,6 +19,12 @@ function onDeviceReady() {
 
     listeningElement.setAttribute('style', 'display:none;');
     receivedElement.setAttribute('style', 'display:block;');
+    
+    navigator.geolocation.getCurrentPosition(onSuccessGeo, onError);
+    
+    document.getElementById('photo').addEventListener('click', function(e) {
+   getPic(); 
+});
 }
 
 
