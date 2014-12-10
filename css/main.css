@@ -3,8 +3,13 @@
 }
 
 #photo {
+    display:block;
     width:100%;
     padding:1em;
+    font:1.5em/1.5 sans-serif;
+    text-align:center;
+    background-color:#0a8416;
+    color:#fff;
 }
 
 #myImage {
