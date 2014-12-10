@@ -23,12 +23,12 @@ function onDeviceReady() {
     });
     
     document.getElementById('myImage').addEventListener('click', function(e) {
-        CordovaExif.readData(e.target.src, function(exifObject) {
+        /*CordovaExif.readData(e.target.src, function(exifObject) {
             var lat = exifObject['GPS Latitude'];
             var lng = exifObject['GPS Latitude'];
             alert(lat + ', ' + lng);
-        });
-    });
+        });*/
+    }); 
 }
 
 
