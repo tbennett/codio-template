@@ -3,14 +3,14 @@
 }
 
 #photo {
-    width:90vw;
-    padding:.25vw;
+    width:100%;
+    padding:.25em;
 }
 
 #myImage {
     position:relative;
     margin:auto;
-    width:98vw;
+    width:100%;
     height:auto;
 }
 
