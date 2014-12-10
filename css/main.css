@@ -1,3 +1,16 @@
 .received {
     display: none;
 }
+
+#photo {
+    width:90vw;
+    padding:.25vw;
+}
+
+#myImage {
+    position:relative;
+    margin:auto;
+    width:98vw;
+    height:auto;
+}
+
