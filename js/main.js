@@ -7,8 +7,7 @@ function getPic() {
     
     var cameraOptions = { 
         quality: 50,
-        destinationType: Camera.DestinationType.FILE_URI,  
-        saveToPhotoAlbum: false
+        destinationType: Camera.DestinationType.FILE_URI
     };
     
     navigator.camera.getPicture(onSuccess, onFail, cameraOptions);
@@ -27,7 +26,7 @@ function onDeviceReady() {
         CordovaExif.readData(e.target.src, function(exifObject) {
             var lat = exifObject['GPS Latitude'];
             var lng = exifObject['GPS Latitude'];
-            console.log(lat + ', ' + lng);
+            alert(lat + ', ' + lng);
         });
     });
 }

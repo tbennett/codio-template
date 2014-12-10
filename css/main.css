@@ -5,9 +5,11 @@
 #photo {
     display:block;
     width:80%;
-    position:relative;
-    margin:auto;
-    padding:1em;
+    position:absolute;
+    z-index:3;
+    bottom:1em;
+    margin-left:9%;
+    padding:2%;
     font:1.5em/1.5 sans-serif;
     text-align:center;
     text-decoration:none;
@@ -19,7 +21,8 @@
 #myImage {
     display:block;
     position:relative;
-    width:100vw;
-    height:100vh;
+    width:99vw;
+    height:99vh;
+    margin:auto;
 }
 
