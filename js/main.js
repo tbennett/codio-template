@@ -3,13 +3,14 @@
 document.addEventListener('deviceready', onDeviceReady, false);
 
 
+
 function getPic() {
     
     var cameraOptions = { 
         quality: 50,
         destinationType: Camera.DestinationType.FILE_URI,  
-        saveToPhotoAlbum: true;
-    }
+        saveToPhotoAlbum: true
+    };
     
     navigator.camera.getPicture(onSuccess, onFail, cameraOptions);
 }

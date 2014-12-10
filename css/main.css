@@ -4,10 +4,11 @@
 
 #photo {
     display:block;
-    width:100%;
+    width:200px;
     padding:1em;
     font:1.5em/1.5 sans-serif;
     text-align:center;
+    text-decoration:none;
     background-color:#0a8416;
     color:#fff;
 }
